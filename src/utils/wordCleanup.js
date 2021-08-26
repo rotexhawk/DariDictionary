@@ -1,18 +1,17 @@
 export function turnToArray(str) {
-    if (!str) {
-        return str;
-    }
-    return removeSlashes(removeBrackets(str.toLowerCase())).split(',');
+  if (!str) {
+    return str;
+  }
+  return removeSlashes(removeBrackets(str.toLowerCase())).split(",");
 }
 
 export function removeSlashes(str) {
-    return str.replace(/\"/g, '');
+  return str.replace(/\"/g, "");
 }
 
 export function removeBrackets(str) {
-    return str.replace(/[\[\]]/g, '');
+  return str.replace(/[\[\]]/g, "");
 }
-
 
 /**
  * Performs multiple data sanitation and if toString is set, converts the Array to String.
@@ -21,28 +20,30 @@ export function removeBrackets(str) {
  * @return {Data}    Return the data back as the string or the original form.
  */
 export function sanitize(data, toString = false) {
-    const seperator = getSeperator(data);
-    if (!seperator) {
-        return data;
-    }
-    data = data.split(seperator);
-    data = data.filter(str => {
-        return /^[a-zA-Z\u0600-\u06FF\\.\s]+$/.test(str);
-    }).map(str => str.trim());
-
-    if (toString) {
-        return data.join(seperator);
-    }
+  const seperator = getSeperator(data);
+  if (!seperator) {
     return data;
+  }
+  data = data.split(seperator);
+  data = data
+    .filter(str => {
+      return /^[a-zA-Z\u0600-\u06FF\\.\s]+$/.test(str);
+    })
+    .map(str => str.trim());
+
+  if (toString) {
+    return data.join(seperator);
+  }
+  return data;
 }
 
 function getSeperator(data) {
-    if (data.includes('\n')) {
-        return '\n';
-    }
-    if (data.includes('.')) {
-        return '.'
-    }
+  if (data.includes("\n")) {
+    return "\n";
+  }
+  if (data.includes(".")) {
+    return ".";
+  }
 }
 
 /**
@@ -51,7 +52,7 @@ function getSeperator(data) {
  * @return {[type]}     [description]
  */
 export function hyphenateWord(str) {
-    return str.replace(/\s|%20/g, '-').trim();
+  return str.replace(/\s|%20/g, "-").trim();
 }
 
 /**
@@ -60,7 +61,7 @@ export function hyphenateWord(str) {
  * @return {[type]}     [description]
  */
 export function dehyphenateWord(str) {
-    return str.replace(/\-/g, ' ').trim();
+  return str.replace(/\-/g, " ").trim();
 }
 
 /**
@@ -69,20 +70,19 @@ export function dehyphenateWord(str) {
  * @return {[type]}      [description]
  */
 export function lowerCaseSyns(synonyms) {
-    synonyms.forEach(synFamily => {
-        synFamily.forEach(synGroup => {
-            synGroup.en = synGroup.en.map(syn => {
-                return syn.toLowerCase();
-            });
-        });
+  synonyms.forEach(synFamily => {
+    synFamily.forEach(synGroup => {
+      synGroup.en = synGroup.en.map(syn => {
+        return syn.toLowerCase();
+      });
     });
-    return synonyms;
+  });
+  return synonyms;
 }
 
-
 export function lowerCaseWords(words) {
-    return words.map(word => {
-        word.word = word.word.toLowerCase();
-        return word;
-    });
+  return words.map(word => {
+    word.word = word.word.toLowerCase();
+    return word;
+  });
 }

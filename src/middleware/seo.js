@@ -1,12 +1,12 @@
-import { hyphenateWord } from '../utils/wordCleanup';
+import { hyphenateWord } from "../utils/wordCleanup";
 
 let config;
-export default (conf) => {
-    config = conf;
-    return function seoTasks(req, res, next) {
-        _removeSlugWords(req, res, next);
-        _canonolizeURL(req, res);
-    }
+export default conf => {
+  config = conf;
+  return function seoTasks(req, res, next) {
+    _removeSlugWords(req, res, next);
+    _canonolizeURL(req, res);
+  };
 };
 
 /**
@@ -17,19 +17,18 @@ export default (conf) => {
  * @return {[type]}        [description]
  */
 function _removeSlugWords(req, res, next) {
-    if (req.url.includes(' ')) {
-        req.url = hyphenateWord(req.url);
-        res.redirect(req.url);
-    } else {
-        next();
-    }
+  if (req.url.includes(" ")) {
+    req.url = hyphenateWord(req.url);
+    res.redirect(req.url);
+  } else {
+    next();
+  }
 }
 
 function _canonolizeURL(req, res) {
-    res.locals.canonicalUrl = _getCanonicalUrl(req);
+  res.locals.canonicalUrl = _getCanonicalUrl(req);
 }
 
-
 function _getCanonicalUrl(req) {
-    return config.app.siteUrl + req.url;
+  return config.app.siteUrl + req.url;
 }
