@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-lg-12 search-container search-eng">
+        <form class="search-form" method="post" action="/">
+                <div class="form-group block-flush search-box">
+                    <input type="text" class="form-control" name="word" id="search-field" autocomplete="off">
+                    <div class="clear-search hidden"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                    <div class="search-icon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+                </div>
+        </form>
+
+        <div class="suggestions-container hidden">
+            <ul id="suggestion-list">
+            </ul>
+        </div>
+        <div class="header-search-tabs  search-eng">
+            <button type="button" class="button english-tab active" data-search-url="/eng" data-ref="eng">English</button>
+            <button type="button" class="button dari-tab" data-search-url="/dari" data-ref="dari">Dari</button>
+        </div>
+    </div>
+</div>

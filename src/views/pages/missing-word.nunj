@@ -1,0 +1,25 @@
+{% extends 'layout.nunj' %}
+
+{% block content %}
+    <div class="card-box">
+        <h3 class="card-header block-normal">OOPs! Seems like we are missing something.</h3>
+        <p>We don't have any data for <strong>{{ word }}</strong>. You can help us by filling the form below.</p>
+        <h2 class="text-center">{{word}}</h2>
+        <form method="post" action="/" class="padding-top-normal" id="new-word-form">
+            <div class="form-group">
+                <label for="meaning">Meaning:</label>
+                <input type="text" class="form-control block-normal" name="meaning" autocomplete="off" placeholder="Please separate multiple words by adding period.">
+                <label for="synonym">Antonym:</label>
+                <input type="text" class="form-control block-normal" name="antonym" autocomplete="off" placeholder="Please separate multiple words by adding period.">
+                <label for="synonym">Synonym:</label>
+                <input type="text" name="synonym" class="form-control block-normal" placeholder="Please seperate multiple words by adding  period.">
+                <label for="meaning">Example:</label>
+                <textarea name="meaning" class="form-control block-normal" placeholder="Please seperate muliple examples by hitting enter."></textarea>
+                <input type="submit" class="btn btn-primary pull-right block-normal">
+            </div>
+        </form>
+
+
+
+    </div>
+{% endblock %}

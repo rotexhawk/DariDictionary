@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% block header %}
+    {% include './common/header.nunj' %}
+{% endblock %}
+
+<body>
+    <div class="page">
+	{% block navbar %}
+	    {% include './common/navbar.nunj' %}
+	{% endblock %}
+	<div class="container site-inner">
+		<div class="row">
+
+			<div class="main-content col-sm-9">
+    			{% block content %}
+        		<p> this is the container</p>
+        		{% endblock %}
+        	</div>
+
+			<div class="right-rail col-sm-3">
+				{% block right_rail %}
+					{% include './common/right-rail.nunj' %}
+				{% endblock %}
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		{% block footer %}
+		   {% include './common/footer.nunj' %}
+		{% endblock %}
+	</footer>
+    </div>
+</body>
+
+</html>

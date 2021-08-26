@@ -1,0 +1,7 @@
+/dist
+/npm-debug.log
+/node_modules
+/public/.sass-cache
+/logs/*
+!.gitkeep
+.DS_Store

@@ -1,0 +1,11 @@
+{% macro build(wordid, word, field, separator) %}
+<a href="#" class="suggest-link pull-right text-small">add {{field}} &raquo;</a>
+<form class="suggest-form hidden" method="post">
+	<input type="hidden" name="serial" value="{{wordid}}">
+    <input type="hidden" name="word" value="{{word}}">
+	<input type="hidden" name="field" value="{{field}}">
+	<span class="form-close glyphicon">&#xe014;</span>
+	<textarea rows="1" class="pull-left " name="suggestions" placeholder="Please separate your suggestions by {{separator}}."></textarea>
+	<input type="submit" class="btn btn-primary pull-left">
+</form>
+{% endmacro %}

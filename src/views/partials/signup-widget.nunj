@@ -1,0 +1,16 @@
+<div class="signup widget">
+	<div class="col-sm-12">
+		<h4 class="widget-title border-bottom">Word of the Day</h4>
+		<p class="block-normal">Sign up to recive the word of the day in your inbox.</p>
+        <form method="post" action="/" id="signup-form">
+              <div class="form-group">
+
+                <input type="text" class="form-control block-normal" name="name" placeholder="Full Name" required>
+
+                <input type="email" class="form-control block-normal" name="email" placeholder="Email" required>
+
+                <input type="submit" class="btn btn-primary pull-right block-normal">
+            </div>
+        </form>
+	</div>
+</div>

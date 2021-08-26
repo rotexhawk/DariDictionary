@@ -1,0 +1,8 @@
+{% extends 'layout.nunj' %}
+
+{% block content %}
+	<div class="card-box">
+		<h2 class="card-header">Page not found.</h2>
+		<p class="block-normal">The page you are looking for can't be found. Go back to <a href="https://www.daridictionary.org">homepage</a>.</p>
+	</div>
+{% endblock %}

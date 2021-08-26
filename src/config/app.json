@@ -1,0 +1,36 @@
+{
+    "port": 3030,
+    "bodyLimit": "1000kb",
+    "siteUrl": "https://www.daridictionary.org",
+    "mailgun": {},
+    "csp": {
+        "directives": {
+            "defaultSrc": ["'self'"],
+            "imgSrc": ["'self'", "www.google-analytics.com"],
+            "scriptSrc": [
+                "'self'",
+                "www.oss.maxcdn.com",
+                "www.google-analytics.com"
+            ],
+            "fontSrc": [
+                "'self'",
+                "fonts.googleapis.com",
+                "fonts.gstatic.com",
+                "data:"
+            ],
+            "styleSrc": [
+                "'self'",
+                "fonts.googleapis.com",
+                "fonts.gstatic.com",
+                "data:"
+            ],
+            "objectSrc": ["'none'"]
+        }
+    },
+    "referrerPolicy": {
+        "policy": "no-referrer"
+    },
+    "transportSecurity": {
+        "maxAge": 5184000
+    }
+}

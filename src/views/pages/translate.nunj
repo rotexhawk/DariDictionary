@@ -1,0 +1,8 @@
+{% extends 'layout.nunj' %}
+
+{% block content %}
+    <div class="card-box">
+        <h3 class="card-header block-normal">OOPs! Seems like we are missing something.</h3>
+
+    </div>
+{% endblock %}

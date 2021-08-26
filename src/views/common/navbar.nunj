@@ -1,0 +1,24 @@
+{% block navbar %}
+    <nav class="navbar navbar-primary">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header col-sm-3 col-md-2">
+                    <a class="navbar-brand" href="/"><img src="../images/logo.png"></a>
+                </div><!-- .navbar-header -->
+                <div id="navbar" class="col-sm-9 col-md-8">
+                    <div class="top-links">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="/">Home</a></li>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/how-to-help">How to Help</a></li>
+                            {## <li><a href="/translate">Translate</a></li> ##}
+                        </ul>
+                    </div><!-- .top-links -->
+                    <div class="nav-searchbar">
+                        {% include '../partials/search_form.nunj' %}
+                    </div>
+                </div><!--#navbar -->
+            </div><!-- row -->
+        </div><!-- .container -->
+    </nav>
+{% endblock %}

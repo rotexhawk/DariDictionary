@@ -1,0 +1,24 @@
+{% macro accordion(title, text, id) %}
+{% if not id %}
+  {% set id = title | truncate(5,true, '') + [1,2,3,4,5,6,7,8,9,10] | random %}
+{% endif %}
+
+<div id="accordion">
+ 
+   
+      <h5>
+        <a data-toggle="collapse" href="#cl8">
+          this is sample title {{ title }}
+        </a>
+      </h5>
+
+    <div id="cl8" class="collapse in">
+      
+        
+            <p>this is sample text {{ text }}</p>
+
+     
+    </div>
+
+</div>
+{% endmacro %}

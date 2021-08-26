@@ -1,0 +1,122 @@
+{% extends 'layout.nunj' %}
+{% import './common/accordion-builder.nunj' as builder %}
+{% import './partials/suggestion-form.nunj' as suggestBuilder %}
+
+{% block content %}
+
+    <div class="meanings-container row">
+        {% if notification %}
+            <div class="alert alert-{{ notification.status }} alert-dismissible animate" data-animation="fadeOut" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                 </button>
+                <strong>{{ notification.message }}</strong>
+            </div>
+
+        {% endif %}
+        <div class="headword-box card-box">
+            <div class="inner-wrapper">
+                <div class="word-header row">
+                    <div class="col-sm-4 col-md-5 text-right text-center-xs">
+                        <h1>{{ word }}</h1>
+                        <div class="word-attributes block-flush-top block-tightest hidden-md hidden-lg hidden-sm">
+                            {% if synonyms[0][0].type %}
+                                <span class="word-type">{{ synonyms[0][0].type}}</span><span class="seperator hidden">|</span><span class="hidden pronounce-key"></span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-2">
+                         <span class="seperator hidden-xs"> | </span>
+                        <div class="icon round shadow voice" data-word="{{word}}">
+                            <span class="glyphicon glyphicon-volume-up"></span>
+                        </div>
+                         <div class="word-attributes hidden-xs">
+                            {% if synonyms[0][0].type %}
+                                <span class="word-type">{{ synonyms[0][0].type}}</span><span class="seperator hidden">|</span><span class="hidden pronounce-key"></span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="col-sm-4 text-left col-md-5 text-center-xs">
+                        <h1>{{ meaning }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-box">
+            <h3 class="card-header  {{ 'rtl' if wordType == 'Dari' }}">{{ word }} <span class="subheading">antonym</span></h3>
+             {% for antonym in ant%}
+                <p class="larger">
+                    <a href="/word/{{antonym}}">{{  antonym }}{{ "," if not loop.last }}</a>
+                </p>
+            {% endfor %}
+            {{ suggestBuilder.build(serial, word, 'antonym', 'adding a period') }}
+        </div>
+
+        <div class="card-box">
+            <h3 class="card-header">Example</h3>
+            {% if wordnet.length == 0 %}
+             <p class="larger">{{ exm }}</p>
+            {% endif %}
+            <ul class="wordnet-list">
+            {% for example in wordnet %}
+            <li class="wordnet-def">S: <span class="secondary-link">({{ example.pos }})</span>
+                {% for synonym in example.synonyms %}
+                <span class="wordnet-syn">
+
+                {% if synonym == word | lower %}
+                    <span class="bold">{{ synonym }}</span>
+                {% else %}
+                    <a class="text-underline" href="/word/{{ synonym }}">{{ synonym }}</a>{{ ',' if not loop.last }} </span>
+                {% endif %}
+                {% endfor %}
+
+                <span class="wordnet-def">({{ example.def }}),</span>
+
+                {% for exp in example.exp %}
+                <span class="wordnet-exp">{{ exp }}{{ ',' if not loop.last }} </span>
+                {% endfor %}
+
+
+            {% endfor %}
+            </li>
+           </ul>
+            {{ suggestBuilder.build(serial, word, 'example', 'pressing enter') }}
+        </div>
+
+        <div class="synonyms-container card-box">
+            <h3 class="card-header {{ 'rtl' if wordType == 'Dari' }}">{{ word }} <span class="subheading">synonyms</span></h3>
+                {% for syngroups in synonyms %}
+                    <div class="accordion highlight" role="tablist" aria-multiselectable="true" class="highlight">
+                    {% for synitems in syngroups %}
+                        {% if (synitems.type) %}
+                            {% set id = synitems.type | lower | truncate(5,true, '') + [1,2,3,4,5,6,7,8,9,10] | random %}
+                                <div class="accordion-header" role="tab" id="headingOne">
+                                    <h5><a data-toggle="collapse" href="#{{id}}">{{ synitems.type }}</a></h5>
+                                </div>
+                                <div id="{{id}}" class="accordion-body collapse in">
+                        {% endif %}
+
+                         {% if synitems.ot %}
+                            <h4 class="group-meaning rtl" ><a href="/word/{{ synitems.ot }}">{{ synitems.ot }}</a></h4>
+                        {% endif %}
+
+                        {% if synitems.en %}
+                            <div class="synonym-group">
+                            {% for syn in synitems.en %}
+                                <span class="synonym"><a class="secondary-link" href="/word/{{ syn }}">{{ syn }}</a>{{ ',' if not loop.last }}</span>
+                            {% endfor %}
+                            </div>
+                            <div class="clearfix"></div>
+                        {% endif %}
+
+                    {% endfor %}
+                                </div><!-- .collapse -->
+                    </div><!-- accordion -->
+                {% endfor %}
+                {{ suggestBuilder.build(serial, word, 'synonyms', 'adding a period') }}
+        </div>
+    </div><!-- .row -->
+{% endblock %}
+
+
+

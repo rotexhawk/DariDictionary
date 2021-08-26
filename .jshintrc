@@ -1,0 +1,19 @@
+{
+    "asi": true,
+    "browser": true,
+    "camelcase": true,
+    "eqeqeq": true,
+    "eqnull": true,
+    "esversion": 6,
+    "indent": 4,
+    "jquery": true,
+    "latedef": false,
+    "maxlen": 160,
+    "newcap": false,
+    "node": true,
+    "quotmark": "single",
+    "strict": false,
+    "trailing": true,
+    "undef": true,
+    "unused": true
+}

@@ -1,0 +1,4 @@
+<div class="rail-content">
+	{% include '../partials/support-widget.nunj' %}
+	{% include '../partials/signup-widget.nunj' %}
+</div>

@@ -1,0 +1,16 @@
+{% extends 'layout.nunj' %}
+
+{% block content %}
+	<div class="card-box">
+		<h2 class="card-header">How can you help</h2>
+		<p class="block-normal">Thank you for taking interest in helping us. Because of the lack of resources for our language (Dari) we had to use Farsi defenitions for some of our words. Our goal is that with the help of our community we will be able to make this a full on English-to-Dari dictionary.</p>
+
+		<strong class="block-tightest display-block">There are multiple ways you can help.</strong>
+			<ul>
+				<li>Sign up to your word contribution form.</li>
+				<li>If you see Farsi word anywhere in the dictionary, click on edit and suggest the Dari version.</li>
+				<li>Click on the contribution tab and choose to either offer new meanings or approve the ones from the community.</li>
+
+			</ul>
+	</div>
+{% endblock %}

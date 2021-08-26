@@ -1,0 +1,28 @@
+{% block header %}
+	<head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="google-site-verification" content="3OnDENQAKp15dsXCLU7QYYPuhKNqpiWhqgfVFyMBBRA" />
+        <meta name="google-site-verification" content="3OnDENQAKp15dsXCLU7QYYPuhKNqpiWhqgfVFyMBBRA" />
+		<meta name="description" content="A collaborative effort to build the first truly English to Dari Dictionary with over 150,000 words.">
+		<meta name="robots" content="noodp">
+		<link rel="canonical" href="{{ canonicalUrl }}">
+		<link rel="publisher" href="https://plus.google.com/b/117272855425120161357/+Cyberserge">
+		<meta property="og:locale" content="en_US">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Dari Dictionary">
+		<meta property="og:description" content="A collaborative effort to build the first truly English to Dari Dictionary with over 150,000 words.">
+		<meta property="og:url" content="https://www.daridictionary.org/">
+		<meta property="og:site_name" content="Dari Dictionary">
+		<meta property="og:image" content="https://www.daridictionary.org/images/fb-daridic-background.jpg">
+
+		<link rel="stylesheet" href="../css/style.css">
+		<title>Dari Dictionary {{res.locals | dump }}</title>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	</head>
+{% endblock %}

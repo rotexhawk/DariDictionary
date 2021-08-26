@@ -1,0 +1,26 @@
+{% extends 'layout.nunj' %}
+
+{% block content %}
+	<div class="card-box">
+		<h2 class="card-header">About Dari Dictionary</h2>
+		<p>Dari Dictionary is an open-source project, that strives to be the first comprehensive English-to-Dari dictionary.</p>
+
+		<p>Since dari meanings are hard to come by you will find a mix of farsi words among the definitions. We are hoping that with the help of the community we will be able to convert those words to their Dari equavilent.</p>
+
+		<p>We have built a database of 150,000 english words with some dari and some farsi definitions, but this is by no means the end of our journey. There is a lot of room for improvement and we are dedicated to making it happen, we ask you to join our small community and become a regular contributor by subscribing to our word contribution form on the right. </p>
+
+		<h3 class="padding-top-normal block-tight">Why build this?</h3>
+		<p>Our language (Dari) hasn't seen any improvment for the last century or so. We are lucky that Iranians speak (Farsi) and they are actively engaged in advancing their language and as a side effect helping us somewhat. However we have relied on Farsi resources for too long and slowly our language is transforming into Farsi.</p>
+
+		<p>I believe in order to preserve our language and culture, we need to make a collective effort to build our language. We hope that overtime we will be able to offer this dictionary in Print Form.</p>
+
+        <h3 class="padding-top-normal block-tight">Future Plans</h3>
+        <p>Our ultimate goal is to offer this dictionary in print form and we are dedicated in reaching that goal through different platforms.</p>
+        <p>Currently we are working on building an Android APP that will be fully offline and is backed by the same database.</p>
+        <p>Our next project is to expand our definitions and incorprate the <a href="https://wordnet.princeton.edu/">wordnet dictionary</a>. This will significantly improve our english definitions and hopefully with the help of the community we will translate those words into dari.</p>
+        <p class="block-normal"></p>
+
+
+
+	</div>
+{% endblock %}

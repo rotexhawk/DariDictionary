@@ -1,0 +1,8 @@
+{% extends 'layout.nunj' %}
+
+{% block content %}
+	<div class="card-box">
+		<h2 class="card-header">We are sorry to see you go.</h2>
+		<p class="block-normal">We won't send you any more word of the day. If you change your mind you can signup again.</p>
+	</div>
+{% endblock %}

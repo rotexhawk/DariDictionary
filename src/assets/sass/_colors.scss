@@ -1,0 +1,30 @@
+$pink: #EC5148;
+$blue: #2D5F7C;
+$blue-light: #5690b1;
+$blue-lighter: #bcd4e2;
+$blue-darker: #163f58;
+$red: #ae0015;
+$text-color: #3b3e41;
+$color-white: #fff;
+$body-bg:#F4F4F4;
+$headings-color: #375c71;
+$link-color:$red;
+.secondary-link {
+    color: $blue;
+    &:hover {
+        color: darken($blue, 15%);
+    }
+}
+
+.text-underline {
+    text-decoration: underline !important;
+    line-height: 1.1em;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.text-red {
+    color: $red !important;
+}

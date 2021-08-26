@@ -1,0 +1,6 @@
+<div class="container">
+	<p class="pull-left">&copy; Dari Dictionary 2017</p>
+    <p class="pull-right">Built by: <a class="text-underline text-white" href="https://www.cyberserge.com">CyberSerge</a></p>
+    <script src="../js/analytics.js"></script>
+	<script src="../js/index.js"></script>
+</div>

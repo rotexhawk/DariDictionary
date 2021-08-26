@@ -1,0 +1,237 @@
+@import 'fonts';
+@import 'colors';
+@import 'widgets';
+@import 'helpers';
+@import 'navbar';
+$enable-flex: true;
+body {
+    background-image: url('/images/page-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page {
+    background-color: rgba(45, 95, 124, 0.5);
+}
+
+.card-header {
+    margin-bottom: 3rem;
+}
+
+.main-content ul li {
+    padding-bottom: 1.5rem;
+}
+
+.main-content ul.wordnet-list li {
+    line-height: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.site-inner {
+    min-height: 700px;
+}
+
+.card-box {
+    background: $color-white;
+    border-radius: 2px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .10);
+    clear: both;
+    float: none;
+    margin-bottom: 2rem;
+    min-height: 5rem;
+    overflow: hidden;
+    padding: 1.1rem 2.1rem;
+    position: relative;
+}
+
+.headword-box {
+    padding: 3.1rem 2.1rem;
+}
+
+.word-header {
+    text-align: center;
+    position: relative;
+    h1 {
+        color: #3b3e41;
+        display: inline-block;
+        font-family: 'Playfair Display', serif;
+        font-weight: 300;
+        letter-spacing: 0.015em;
+        font-size: 3.625rem;
+        margin: 0;
+        padding: 0;
+        line-height: 1.2em;
+        text-transform: lowercase;
+        margin-bottom: 8px;
+    }
+    .seperator {
+        font-size: 3.625rem;
+        margin-bottom: 1.5rem;
+        display: block;
+        font-weight: lighter;
+    }
+    .icon {
+        display: block;
+        cursor: pointer;
+        margin: 0 auto;
+        .glyphicon {
+            color: $red;
+        }
+        &:hover {
+            background: $red;
+            .glyphicon {
+                color: white;
+            }
+        }
+    }
+}
+
+.group-meaning {
+    float: right;
+}
+
+.synonym-group {
+    float: left;
+    margin-top: 10.5px;
+    margin-bottom: 30px;
+}
+
+.word-attributes {
+    text-transform: lowercase;
+    color: $blue;
+    font-size: 1.575rem;
+    letter-spacing: 0.15rem;
+    font-style: italic;
+    margin-top: 1.5rem;
+}
+
+.icon {
+    &.round {
+        border: 1px solid white;
+        border-radius: 50%;
+        width: 33px;
+        height: 33px;
+        text-align: center;
+        * {
+            vertical-align: middle;
+            line-height: 2;
+        }
+    }
+    &.shadow {
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, .30);
+    }
+}
+
+.accordion {
+    margin-bottom: 5rem;
+}
+
+.accordion-header {
+    padding: 5px 2rem;
+    background: gainsboro;
+    border-radius: 4px;
+    a {
+        color: $red;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+    }
+}
+
+.highlight {
+    background-color: #f7f7f9;
+}
+
+.accordion-body {
+    padding: 2rem;
+}
+
+h3.card-header {
+    font-size: 2.2rem;
+    letter-spacing: 0.0454rem;
+    word-spacing: 2px;
+    margin-bottom: 2.5rem;
+    .subheading {
+        font-style: normal;
+        font-variant: small-caps;
+        font-size: 1.047em;
+    }
+}
+
+.search-dari {
+    .header-search-tabs:before {
+        left: 236px;
+    }
+    .search-icon {
+        left: 15px;
+        right: inherit;
+    }
+}
+
+.suggest-form {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0;
+    .form-close {
+        position: absolute;
+        left: 0;
+        font-size: 1.2rem;
+        color: $blue;
+        top: 10px;
+        cursor: pointer;
+    }
+    textarea {
+        width: 90%;
+        margin: 0px;
+        line-height: 1.5em;
+        outline: none;
+        border-width: 0 0 1px 0;
+        padding-left: 20px;
+    }
+    input[type="submit"] {
+        margin-left: 8px;
+        border-radius: 0;
+        margin-top: -4px;
+        font-size: 0.8em;
+    }
+}
+
+textarea,
+input {
+    &::-webkit-input-placeholder,
+    {
+        font-size: 0.8em;
+        font-style: italic;
+        letter-spacing: 0.5px;
+    }
+    &::-moz-placeholder {
+        font-size: 0.8em;
+        font-style: italic;
+        letter-spacing: 0.5px;
+    }
+    &:-ms-input-placeholder {
+        font-size: 0.8em;
+        font-style: italic;
+        letter-spacing: 0.5px;
+    }
+    &:-moz-placeholder {
+        font-size: 0.8em;
+        font-style: italic;
+        letter-spacing: 0.5px;
+    }
+}
+
+.footer {
+    margin-top: 3rem;
+    background: $blue;
+    color: white;
+    bottom: 0;
+    font-weight: lighter;
+    .container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";

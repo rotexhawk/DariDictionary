@@ -1,0 +1,246 @@
+{
+    "serial": 5820,
+    "word": "APART",
+    "meaning": "جدا",
+    "ed": [
+        [
+            4773,
+            4774
+        ],
+        [
+            4775,
+            4776
+        ]
+    ],
+    "tr": null,
+    "ant": [
+        "TOGETHER"
+    ],
+    "exm": "his parents are now living apart",
+    "synonyms": [
+        [
+            {
+                "type": "ADJECTIVE"
+            },
+            {
+                "serial": 4773,
+                "ot": "جدا",
+                "en": [
+                    "SEPARATE",
+                    "APART",
+                    "DETACHED",
+                    "SEGREGATE",
+                    "DISCRETE",
+                    "SEVERAL"
+                ]
+            },
+            {
+                "serial": 4774,
+                "ot": "کنار",
+                "en": [
+                    "NEXT",
+                    "AWAY",
+                    "APART"
+                ]
+            }
+        ],
+        [
+            {
+                "type": "ADVERB"
+            },
+            {
+                "serial": 4775,
+                "ot": "مجزا از",
+                "en": [
+                    "APART"
+                ]
+            },
+            {
+                "serial": 4776,
+                "ot": "سوا",
+                "en": [
+                    "APART",
+                    "ASUNDER",
+                    "INDEPENDENTLY"
+                ]
+            }
+        ]
+    ],
+    "wordnet": [
+        {
+            "synsetOffset": 570124,
+            "lexFilenum": 0,
+            "lexName": "adj.all",
+            "pos": "s",
+            "wCnt": 3,
+            "lemma": "apart(p)",
+            "synonyms": [
+                "apart(p)",
+                "isolated",
+                "obscure"
+            ],
+            "lexId": "0",
+            "ptrs": [
+                {
+                    "pointerSymbol": "&",
+                    "synsetOffset": 569857,
+                    "pos": "a",
+                    "sourceTarget": "0000"
+                }
+            ],
+            "gloss": "remote and separate physically or socially; \"existed over the centuries as a world apart\"; \"preserved because they inhabited a place apart\"- W.H.Hudson; \"tiny isolated villages remote from centers of civilization\"; \"an obscure village\"  ",
+            "def": "remote and separate physically or socially",
+            "exp": [
+                "existed over the centuries as a world apart",
+                "preserved because they inhabited a place apart- W.H.Hudson",
+                "tiny isolated villages remote from centers of civilization",
+                "an obscure village"
+            ]
+        },
+        {
+            "synsetOffset": 2117441,
+            "lexFilenum": 0,
+            "lexName": "adj.all",
+            "pos": "s",
+            "wCnt": 1,
+            "lemma": "apart(p)",
+            "synonyms": [
+                "apart(p)"
+            ],
+            "lexId": "0",
+            "ptrs": [
+                {
+                    "pointerSymbol": "&",
+                    "synsetOffset": 2116958,
+                    "pos": "a",
+                    "sourceTarget": "0000"
+                }
+            ],
+            "gloss": "having characteristics not shared by others; \"scientists felt they were a group apart\"- Vannever Bush  ",
+            "def": "having characteristics not shared by others",
+            "exp": [
+                "scientists felt they were a group apart- Vannever Bush"
+            ]
+        },
+        {
+            "synsetOffset": 182561,
+            "lexFilenum": 2,
+            "lexName": "adv.all",
+            "pos": "r",
+            "wCnt": 1,
+            "lemma": "apart",
+            "synonyms": [
+                "apart"
+            ],
+            "lexId": "3",
+            "ptrs": [],
+            "gloss": "separated or at a distance in place or position or time; \"These towns are many miles apart\"; \"stood with his legs apart\"; \"born two years apart\"  ",
+            "def": "separated or at a distance in place or position or time",
+            "exp": [
+                "These towns are many miles apart",
+                "stood with his legs apart",
+                "born two years apart"
+            ]
+        },
+        {
+            "synsetOffset": 182242,
+            "lexFilenum": 2,
+            "lexName": "adv.all",
+            "pos": "r",
+            "wCnt": 2,
+            "lemma": "apart",
+            "synonyms": [
+                "apart",
+                "aside"
+            ],
+            "lexId": "1",
+            "ptrs": [],
+            "gloss": "not taken into account or excluded from consideration; \"these problems apart, the country is doing well\"; \"all joking aside, I think you're crazy\"  ",
+            "def": "not taken into account or excluded from consideration",
+            "exp": [
+                "these problems apart, the country is doing well",
+                "all joking aside, I think you're crazy"
+            ]
+        },
+        {
+            "synsetOffset": 236119,
+            "lexFilenum": 2,
+            "lexName": "adv.all",
+            "pos": "r",
+            "wCnt": 1,
+            "lemma": "apart",
+            "synonyms": [
+                "apart"
+            ],
+            "lexId": "7",
+            "ptrs": [],
+            "gloss": "away from another or others; \"they grew apart over the years\"; \"kept apart from the group out of shyness\"; \"decided to live apart\"  ",
+            "def": "away from another or others",
+            "exp": [
+                "they grew apart over the years",
+                "kept apart from the group out of shyness",
+                "decided to live apart"
+            ]
+        },
+        {
+            "synsetOffset": 235931,
+            "lexFilenum": 2,
+            "lexName": "adv.all",
+            "pos": "r",
+            "wCnt": 2,
+            "lemma": "aside",
+            "synonyms": [
+                "aside",
+                "apart"
+            ],
+            "lexId": "5",
+            "ptrs": [],
+            "gloss": "placed or kept separate and distinct as for a purpose; \"had a feeling of being set apart\"; \"quality sets it apart\"; \"a day set aside for relaxing\"  ",
+            "def": "placed or kept separate and distinct as for a purpose",
+            "exp": [
+                "had a feeling of being set apart",
+                "quality sets it apart",
+                "a day set aside for relaxing"
+            ]
+        },
+        {
+            "synsetOffset": 182739,
+            "lexFilenum": 2,
+            "lexName": "adv.all",
+            "pos": "r",
+            "wCnt": 1,
+            "lemma": "apart",
+            "synonyms": [
+                "apart"
+            ],
+            "lexId": "4",
+            "ptrs": [],
+            "gloss": "one from the other; \"people can't tell the twins apart\"  ",
+            "def": "one from the other",
+            "exp": [
+                "people can't tell the twins apart"
+            ]
+        },
+        {
+            "synsetOffset": 182430,
+            "lexFilenum": 2,
+            "lexName": "adv.all",
+            "pos": "r",
+            "wCnt": 2,
+            "lemma": "apart",
+            "synonyms": [
+                "apart",
+                "asunder"
+            ],
+            "lexId": "2",
+            "ptrs": [],
+            "gloss": "into parts or pieces; \"he took his father's watch apart\"; \"split apart\"; \"torn asunder\"  ",
+            "def": "into parts or pieces",
+            "exp": [
+                "he took his father's watch apart",
+                "split apart",
+                "torn asunder"
+            ]
+        }
+    ]
+}
